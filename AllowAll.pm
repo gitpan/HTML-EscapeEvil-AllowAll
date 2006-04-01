@@ -10,7 +10,7 @@ use constant ALLOWTAGS_YAML => "AllowTagsDetails.yaml";
 our($ALLOW_YAML_PATH,$VERSION);
 BEGIN{
 
-	$VERSION = 0.01;
+	$VERSION = 0.02;
 
 # set yaml path
 	my $pkgpm = __PACKAGE__;
@@ -57,7 +57,7 @@ HTML::EscapeEvil::AllowAll - Escape tag.but all tag allow
 
 =head1 VERSION
 
-0.01
+0.02
 
 =head1 SYNPSIS
 
@@ -74,10 +74,6 @@ Only tag where it wants to escape is specified with deny_tags method etc.
 and it uses it because it all enters the state of permission. 
 
 =head1 METHOD
-
-=head2 new
-
-Create instance & all tags allow.
 
 =head2 allow_all
 

@@ -61,7 +61,7 @@
     - kbd
 
 - l:
-    - level
+    - label
     - legend
     - li
     - link
@@ -96,12 +96,14 @@
     - ruby
 
 - s:
+    - s
     - samp
     - script
     - select
     - small
     - span
     - strong
+    - strike
     - style
     - sub
     - sup
@@ -119,6 +121,7 @@
     - tt
 
 - u:
+    - u
     - ul
 
 - v:

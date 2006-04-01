@@ -2,7 +2,7 @@ NAME
     HTML::EscapeEvil::AllowAll - Escape tag.but all tag allow
 
 VERSION
-    0.01
+    0.02
 
 SYNPSIS
         use HTML::EscapeEvil::AllowAll;
@@ -18,9 +18,6 @@ DESCRIPTION
     and it uses it because it all enters the state of permission.
 
 METHOD
-  new
-    Create instance & all tags allow.
-
   allow_all
     All tags allow.
 

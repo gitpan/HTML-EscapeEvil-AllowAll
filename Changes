@@ -1,5 +1,8 @@
 Revision history for Perl extension HTML::EscapeEvil::AllowAll.
 
+0.02  Sat Apr 01 23:00:00 2006
+    - added allow tag <s>,<strike>,<label> tag in AllowTagsDetails.yaml
+
 0.01  Thu Mar 30 21:51:24 2006
 	- original version; created by h2xs 1.23 with options
 		-A -X -n HTML::EscapeEvil::AllowAll
