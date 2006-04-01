@@ -1,0 +1,125 @@
+---
+--- AllowTagsDetails.yaml
+---
+
+- a:
+    - a
+    - abbr
+    - acronym
+    - address
+    - area
+
+- b:
+    - b
+    - base
+    - bdo
+    - big
+    - blockquote
+    - body
+    - br
+    - button
+
+- c:
+    - caption
+    - cite
+    - code
+    - col
+    - colgroup
+
+- d:
+    - dd
+    - del
+    - dfn
+    - div
+    - dl
+    - dt
+
+- e:
+    - em
+
+- f:
+    - fieldset
+    - form
+
+- h:
+    - h1
+    - h2
+    - h3
+    - h4
+    - h5
+    - h6
+    - hr
+    - html
+
+- i:
+    - i
+    - img
+    - input
+    - ins
+
+- k:
+    - kbd
+
+- l:
+    - level
+    - legend
+    - li
+    - link
+
+- m:
+    - map
+    - meta
+
+- n:
+    - noscript
+
+- o:
+    - object
+    - ol
+    - optgroup
+    - option
+
+- p:
+    - p
+    - param
+    - pre
+
+- q:
+    - q
+
+- r:
+    - rb
+    - rbc
+    - rp
+    - rt
+    - rtc
+    - ruby
+
+- s:
+    - samp
+    - script
+    - select
+    - small
+    - span
+    - strong
+    - style
+    - sub
+    - sup
+
+- t:
+    - table
+    - tbody
+    - td
+    - textarea
+    - tfoot
+    - th
+    - thead
+    - title
+    - tr
+    - tt
+
+- u:
+    - ul
+
+- v:
+    - var
