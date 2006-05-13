@@ -7,45 +7,47 @@ use File::Spec;
 use YAML;
 use constant ALLOWTAGS_YAML => "AllowTagsDetails.yaml";
 
-our($ALLOW_YAML_PATH,$VERSION);
-BEGIN{
+our ( $ALLOW_YAML_PATH, $VERSION );
 
-	$VERSION = 0.02;
+BEGIN {
 
-# set yaml path
-	my $pkgpm = __PACKAGE__;
-	$pkgpm =~ s/::/\//g;
-	$pkgpm .= ".pm";
-	$ALLOW_YAML_PATH = File::Spec->catfile(dirname($INC{$pkgpm}),"AllowAll",ALLOWTAGS_YAML);
+    $VERSION = 0.03;
+
+    # set yaml path
+    my $pkgpm = __PACKAGE__;
+    $pkgpm =~ s/::/\//g;
+    $pkgpm .= ".pm";
+    $ALLOW_YAML_PATH =
+      File::Spec->catfile( dirname( $INC{$pkgpm} ), "AllowAll",
+        ALLOWTAGS_YAML );
 }
 
-sub new{
+sub new {
 
-	my $class = shift;
-	my $self = $class->SUPER::new;
-	bless $self,ref $class || $class;
-	$self->allow_all;
-	$self;
+    my $class = shift;
+    my $self  = $class->SUPER::new;
+    bless $self, ref $class || $class;
+    $self->allow_all;
+    $self;
 }
 
-sub allow_all{
+sub allow_all {
 
-	my $self = shift;
-	$self->allow_comment(1);
-	$self->allow_declaration(1);
-	$self->allow_process(1);
-	$self->allow_entity_reference(1);
-	$self->collection_process(1);
+    my $self = shift;
+    $self->allow_comment(1);
+    $self->allow_declaration(1);
+    $self->allow_process(1);
+    $self->allow_entity_reference(1);
+    $self->collection_process(1);
 
-	$self->add_allow_tags(&_read_yaml);
+    $self->add_allow_tags(&_read_yaml);
 }
 
 # read all tags yaml
-sub _read_yaml{
+sub _read_yaml {
 
-	map { @{(each %{$_})[1]} } @{YAML::LoadFile($ALLOW_YAML_PATH)};
+    map { @{ ( each %{$_} )[1] } } @{ YAML::LoadFile($ALLOW_YAML_PATH) };
 }
-
 
 1;
 
@@ -57,7 +59,7 @@ HTML::EscapeEvil::AllowAll - Escape tag.but all tag allow
 
 =head1 VERSION
 
-0.02
+0.03
 
 =head1 SYNPSIS
 
