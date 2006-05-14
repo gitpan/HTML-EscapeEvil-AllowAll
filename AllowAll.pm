@@ -11,7 +11,7 @@ our ( $ALLOW_YAML_PATH, $VERSION );
 
 BEGIN {
 
-    $VERSION = 0.03;
+    $VERSION = 0.04;
 
     # set yaml path
     my $pkgpm = __PACKAGE__;
@@ -59,7 +59,7 @@ HTML::EscapeEvil::AllowAll - Escape tag.but all tag allow
 
 =head1 VERSION
 
-0.03
+0.04
 
 =head1 SYNPSIS
 

@@ -2,7 +2,7 @@ NAME
     HTML::EscapeEvil::AllowAll - Escape tag.but all tag allow
 
 VERSION
-    0.03
+    0.04
 
 SYNPSIS
         use HTML::EscapeEvil::AllowAll;
