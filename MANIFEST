@@ -7,5 +7,4 @@ t/02_isa.t
 t/03_method.t
 t/04_allow_all.t
 AllowAll.pm
-AllowAll/AllowTagsDetails.yaml
 META.yml                                 Module meta-data (added by MakeMaker)

@@ -6,7 +6,7 @@
 
 # change 'tests => 1' to 'tests => last_test_to_print';
 
-use Test::More tests => 9;
+use Test::More tests => 10;
 use strict;
 
 use HTML::EscapeEvil::AllowAll;
@@ -64,6 +64,13 @@ ok(scalar @tags);
 
 # ==================================================== #
 # 9
+# allow_tags Check part 2
+# ==================================================== #
+my $tag = $tags[sprintf "%d", rand($#tags)];
+ok($allow->is_allow_tags($tag));
+
+# ==================================================== #
+# 10
 # deny_tags Check
 # ==================================================== #
 ok(!$allow->deny_tags);
